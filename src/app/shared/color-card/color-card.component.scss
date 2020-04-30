@@ -1,0 +1,21 @@
+.card{
+    min-height: 185px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    font-family: 'IBM Plex Mono', monospace;
+    cursor: pointer;
+    .year{
+        text-align: start;
+    }
+    .pantone{
+        text-align: end;
+    }
+    .color-name{
+        text-align: center;
+    }
+}
+.card:hover {
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}

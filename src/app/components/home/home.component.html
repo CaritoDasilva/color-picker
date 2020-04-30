@@ -1,0 +1,21 @@
+<div class="home-container">
+    <div class="title-container">
+        <h1>COLORES</h1>
+    </div>
+    <div class="row">
+        <ng-container>
+            <div class="card-container" *ngFor="let color of colors | paginate: { id: 'server', itemsPerPage: colorList.per_page, currentPage: colorList.page, totalItems: colorList.total }">
+                <div class="col m4">
+                    <app-color-card [color]="color"></app-color-card>
+    
+                </div>
+            </div>
+        </ng-container>
+        
+
+    </div>
+    <div>
+        <pagination-controls class="pagination-colors" (pageChange)="getColors($event)" id="server"></pagination-controls>
+
+    </div>
+</div>

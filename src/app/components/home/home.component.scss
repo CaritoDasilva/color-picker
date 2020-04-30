@@ -1,0 +1,24 @@
+.home-container{
+    .title-container{
+        h1{
+            font-family: 'Vidaloka', serif;
+            color: #ffffff;
+            text-align: center;
+        }
+    }
+
+    .pagination-colors ::ng-deep .ngx-pagination .current{
+        border-radius: 2px;
+        background-color: #ee6e73;
+    }
+    .pagination-colors ::ng-deep .ngx-pagination li a {
+        color: #ffffff;
+    }
+
+    // .pagination{
+    //     a {
+    //         color: #ffffff;
+
+    //     }
+    // }
+}

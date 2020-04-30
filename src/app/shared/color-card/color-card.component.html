@@ -1,0 +1,9 @@
+<div class="card" #card [ngStyle]="{'background-color': color.color}" (click)="copyColor()" cdkCopyToClipboard={{color.color}} >
+    <div class="col m12 card-content">
+        <h6 class="year">{{color.year}}</h6>
+        <h6 class="color-name" *ngIf="!isCopied">{{color.name}}</h6>
+        <h6 class="color-name" *ngIf="!isCopied">{{color.color}}</h6>
+        <h4 class="color-name copy-text" *ngIf="isCopied">¡COPIADO!</h4>
+        <h6 class="pantone">{{color.pantone_value}}</h6>
+    </div>              
+</div>
