@@ -13,12 +13,14 @@ export class HomeComponent implements OnInit {
   colorList: ColorList;
   colors: Color[];
   page: number;
-  constructor(private colorService: ColorsService) { 
+  constructor(private renderer: Renderer2, private colorService: ColorsService) { 
     this.colors = [];
     this.page = 1;
   }
-
+  
   ngOnInit(): void {
+    console.log('inicie')
+    this.renderer.setStyle( document.body, 'background-color', '424242' )
     this.getColors(this.page);
   }
 
