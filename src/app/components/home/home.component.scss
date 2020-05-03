@@ -1,3 +1,4 @@
+
 .home-container{
     .title-container{
         h1{
@@ -7,18 +8,15 @@
         }
     }
 
-    .pagination-colors ::ng-deep .ngx-pagination .current{
-        border-radius: 2px;
-        background-color: #ee6e73;
+    .pagination-container{
+        display: flex;
+        justify-content: flex-end;
+        .pagination-colors ::ng-deep .ngx-pagination .current{
+            border-radius: 2px;
+            background-color: #ee6e73;
+        }
+        .pagination-colors ::ng-deep .ngx-pagination li a {
+            color: #ffffff;
+        }
     }
-    .pagination-colors ::ng-deep .ngx-pagination li a {
-        color: #ffffff;
-    }
-
-    // .pagination{
-    //     a {
-    //         color: #ffffff;
-
-    //     }
-    // }
 }

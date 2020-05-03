@@ -1,3 +1,21 @@
 
-        
 <router-outlet></router-outlet>
+<div class="row collapsible-container">
+    <div class="col m4">
+        <ul class="collapsible" #collapsible>
+            <li>
+                <div class="collapsible-header"><i class="material-icons"><img src="../assets/imgs/edit-tools.png" alt=""></i>Crea tu Paleta</div>
+                <div class="collapsible-body">
+                    <p *ngIf="colorPalette.length < 1">Agrega un máximo de 3 colores, haciendo click sobre cada color, para que puedas probar tu paleta</p>
+                    <div *ngIf="colorPalette.length === 0"><h6>Aún no has agregado ningún color a tu paleta tu paleta</h6></div>
+                    <div class="palette-container" *ngFor="let color of colorPalette">
+                        <div class="bg-color" [ngStyle]="{'background-color': color.color}"></div>
+                        <div class="text-container col m8 offset-m1"><h6>{{color.name}}</h6></div>
+                    </div>
+                    <p *ngIf="colorPalette.length > 0 && colorPalette.length < 3">Debes agregar 3 colorespara poder probarlos</p>
+                    <p *ngIf="colorPalette.length === 3">Ahora puedes probar como se ve tu paleta <a routerLink="tester" routerLinkActive="active">aqui!</a></p>
+                </div>
+            </li>    
+        </ul>
+    </div>
+</div>

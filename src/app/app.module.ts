@@ -8,12 +8,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 import { ColorCardComponent } from './shared/color-card/color-card.component';
+import { TesterComponent } from './components/tester/tester.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ColorCardComponent
+    ColorCardComponent,
+    TesterComponent
   ],
   imports: [
     BrowserModule,

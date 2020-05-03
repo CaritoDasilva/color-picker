@@ -1,0 +1,38 @@
+.collapsible-container{
+    margin-top: -70px;
+    .collapsible-header{
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 30px;
+        }
+    }
+    .collapsible-body{
+        background-color: #ffffff;
+    }
+    .palette-container{
+        display: flex;
+        align-items: center;
+        padding: 2%;
+        p{
+            font-size: 12px;
+            text-align: center;
+        }
+        .bg-color{
+            border-radius: 50%;
+            height: 20px;
+            width: 20px;
+        }
+        .text-container{
+            display: flex;
+            align-items: center;
+            h6{
+                font-size: 20px;
+                color: #424242;
+                margin-bottom: 0;
+                margin-top: 0;
+                text-transform: uppercase;
+            }
+        }
+    }
+}
