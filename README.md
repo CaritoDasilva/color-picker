@@ -1,27 +1,32 @@
-# MultiplicaTest
+# Multiplica Test
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.3.
+La aplicación está pensada para que diseñadores puedan copiar los colores que aparecen en las tarjetas en el clipboard y pegar el código en el proyecto en el cual se encuentran trabajando, utilizando una interfaz gráfica que permite ver los datos del color y su tonalidad. Adicionalmente se agrega una funcionalidad extra que permite que puedan construir una paleta de 3 colores y ver como se ven en conjunto en una nueva vista.
 
-## Development server
+# Tecnologías utilizadas en el proyecto:
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+ - Typescript.
+ - Angular 9.
+ - Materialize como framework de diseño.
+ - Firebase para el deploy.
 
-## Code scaffolding
+# Instalación del proyecto
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+ - npm install (para correr todas las dependencias instaladas)
+
+## Servidor de desarrollo
+
+Run `ng serve` para levantar el serve de desarrollo. Proyecto puede visualizarse localmente en el puerto  `http://localhost:4200/`. 
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Run `ng build` para realizar el build del proyecto. 
 
-## Running unit tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## URL en producción
 
-## Running end-to-end tests
+**[https://color-picker-61f35.firebaseapp.com/](https://color-picker-61f35.firebaseapp.com/)**
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+## Repositorio en Github
 
-## Further help
+**[https://github.com/CaritoDasilva/color-picker](https://github.com/CaritoDasilva/color-picker)**
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

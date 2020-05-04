@@ -1,7 +1,7 @@
 <div class="tester-container">
     <div class="window-container">
         <div class="row">
-            <a class="col md2 offset-m10" routerLink="" routerLinkActive="active"><i class="material-icons">arrow_back</i></a>
+            <a class="col md2 offset-m10 back-btn" routerLink="" routerLinkActive="active"><i class="material-icons">arrow_back</i></a>
             <div class="col s12 m6 offset-m3">
                 <div class="card darken-1 z-depth-5">
                     <div class="card-action">
@@ -15,19 +15,26 @@
                     <div class="card-content">
                         <span class="card-title">¡Soy el Tester!</span>
                         <div class="sections-container">
-                            <div class="rectangle-container" [ngStyle]="{'background-color': primaryColor}"></div>
+                            <div class="rectangle-container" #rectangleContainer></div>
                             <div class="list-container">
                                 <ul>
-                                    <li><span class="circle-li" [ngStyle]="{'background-color': secundaryColor}"></span><span class="line-li"><img src="../../../assets/imgs/path106-2.png" alt=""></span></li>
-                                    <li><span class="circle-li" [ngStyle]="{'background-color': secundaryColor}"></span><span class="line-li"><img src="../../../assets/imgs/path106-2.png" alt=""></span></li>
-                                    <li><span class="circle-li" [ngStyle]="{'background-color': secundaryColor}"></span><span class="line-li"><img src="../../../assets/imgs/path106-2.png" alt=""></span></li>
-                                    <li><span class="circle-li" [ngStyle]="{'background-color': secundaryColor}"></span><span class="line-li"><img src="../../../assets/imgs/path106-2.png" alt=""></span></li>
+                                    <li><span class="circle-li" [ngStyle]="{'background-color': palette[2].color}"></span><span class="line-li"><img src="../../../assets/imgs/path106-2.png" alt=""></span></li>
+                                    <li><span class="circle-li" [ngStyle]="{'background-color': palette[2].color}"></span><span class="line-li"><img src="../../../assets/imgs/path106-2.png" alt=""></span></li>
+                                    <li><span class="circle-li" [ngStyle]="{'background-color': palette[2].color}"></span><span class="line-li"><img src="../../../assets/imgs/path106-2.png" alt=""></span></li>
+                                    <li><span class="circle-li" [ngStyle]="{'background-color': palette[2].color}"></span><span class="line-li"><img src="../../../assets/imgs/path106-2.png" alt=""></span></li>
    
                                 </ul>
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="row colors">
+            <div class="col m6 offset-md3">
+                    <ul cdkDropList class="example-list" (cdkDropListDropped)="drop($event)">
+                        <li class="example-box" *ngFor="let color of palette" cdkDrag>{{color.name}}</li>
+                    </ul>
             </div>
         </div>
                            

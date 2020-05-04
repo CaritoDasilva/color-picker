@@ -25,15 +25,19 @@ export class AppComponent implements OnInit {
   ngAfterViewInit(): void {
     this.instances = M.Collapsible.init(this.collapsible.nativeElement);
   }
+
+  closeCollapsible() {
+    this.instances.close(0);
+  }
   
-  openTool() {
-    // return this.instances.open()
+
+  removeColorFromPalette(i: number) {
+    return this.colorPalette.splice(i, 1);
   }
   
   colorToPalette() {
     return this.colorService.getColorPalette().subscribe((data: Color[]) => {
       this.colorPalette = data;
-      console.log(this.colorPalette)
     })
   }
 }

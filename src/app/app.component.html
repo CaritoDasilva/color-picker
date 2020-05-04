@@ -8,12 +8,13 @@
                 <div class="collapsible-body">
                     <p *ngIf="colorPalette.length < 1">Agrega un máximo de 3 colores, haciendo click sobre cada color, para que puedas probar tu paleta</p>
                     <div *ngIf="colorPalette.length === 0"><h6>Aún no has agregado ningún color a tu paleta tu paleta</h6></div>
-                    <div class="palette-container" *ngFor="let color of colorPalette">
+                    <div class="palette-container" *ngFor="let color of colorPalette; index as i">
                         <div class="bg-color" [ngStyle]="{'background-color': color.color}"></div>
-                        <div class="text-container col m8 offset-m1"><h6>{{color.name}}</h6></div>
+                        <div class="text-container col m9 offset-m1"><h6>{{color.name}}</h6></div>
+                        <div class="icons"><i class="material-icons delete-icon" (click)="removeColorFromPalette(i)">delete</i></div>
                     </div>
                     <p *ngIf="colorPalette.length > 0 && colorPalette.length < 3">Debes agregar 3 colorespara poder probarlos</p>
-                    <p *ngIf="colorPalette.length === 3">Ahora puedes probar como se ve tu paleta <a routerLink="tester" routerLinkActive="active">aqui!</a></p>
+                    <p *ngIf="colorPalette.length === 3">Ahora puedes probar como se ve tu paleta <a routerLink="tester" routerLinkActive="active" (click)="closeCollapsible()">aqui!</a></p>
                 </div>
             </li>    
         </ul>

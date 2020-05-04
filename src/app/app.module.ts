@@ -1,7 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule }    from '@angular/common/http';
-import { ClipboardModule } from '@angular/cdk/clipboard'
+import { ClipboardModule } from '@angular/cdk/clipboard';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 import { NgxPaginationModule } from 'ngx-pagination';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -22,7 +23,8 @@ import { TesterComponent } from './components/tester/tester.component';
     AppRoutingModule,
     HttpClientModule,
     ClipboardModule,
-    NgxPaginationModule
+    NgxPaginationModule,
+    DragDropModule
   ],
   providers: [],
   bootstrap: [AppComponent]

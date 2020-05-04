@@ -27,12 +27,16 @@
             display: flex;
             align-items: center;
             h6{
-                font-size: 20px;
+                font-size: 18px;
                 color: #424242;
                 margin-bottom: 0;
                 margin-top: 0;
                 text-transform: uppercase;
             }
+        }
+        .icons{
+            // margin-left: 5%;
+            cursor: pointer;
         }
     }
 }
